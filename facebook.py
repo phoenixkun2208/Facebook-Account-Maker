@@ -192,13 +192,3 @@ if __name__ == '__main__':
         help='set logging level to debug')
     arg = parse.parse_args()
 
-    if arg.count:
-        try:
-            print ('') # new line
-            create()
-        except KeyboardInterrupt:
-            logging.error('user interrupt..\n')
-#        except Exception as exc:
- #           logging.critical(str(exc) + '\n')
-    else:
-        parse.print_help()     parse.print_help()
